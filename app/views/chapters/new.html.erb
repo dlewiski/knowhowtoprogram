@@ -1,0 +1,12 @@
+<div class="center-container">
+  <div class="center-content">
+    <h3>Add a new chapter:</h3>
+    <hr>
+
+    <%= form_for(@chapter) do |f| %>
+      <%= f.label :name, "Name: " %>
+      <%= f.text_field :name %>
+      <%= f.submit  %>
+    <% end %>
+  </div>
+</div>

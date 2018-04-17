@@ -8,7 +8,8 @@
     <h1 class="courses-heading">Courses</h1>
 
     <% @chapters.each do |chapter| %>
-      <span class="chapter"><%= link_to chapter.name, chapter_sections_path(chapter), class: "chapter" %><br></span>
+      <span class="chapter"><%= link_to chapter.name, chapter_sections_path(chapter), class: "chapter" %></span> <span> <%= link_to "Edit", edit_chapter_path(chapter) %></span><br>
     <% end %>
+    <h4><%= link_to "Add a new chapter", new_chapter_path %></h4>
   </div>
 </div>

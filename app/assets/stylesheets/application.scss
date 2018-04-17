@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
@@ -74,4 +75,23 @@ body {
 
 .courses-heading {
   font-weight: 300;
+}
+
+.center-container {
+  height: 500px;
+  width: 500px;
+  border-style: groove;
+  border-width: 20px;
+  border-color: gray;
+  position: absolute;
+  margin: 0 auto;
+  top: 30%;
+  left: 40%;
+}
+
+.center-content {
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
 }
