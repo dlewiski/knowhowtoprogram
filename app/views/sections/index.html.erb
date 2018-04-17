@@ -3,3 +3,5 @@
 <% @sections.each do |section| %>
   <h3><%= link_to section.name, section_lessons_path(section) %></h3>
 <% end %>
+
+<p><%= link_to "Home Page", root_path %></p>
