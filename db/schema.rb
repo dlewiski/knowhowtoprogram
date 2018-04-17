@@ -10,15 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180417155130) do
+ActiveRecord::Schema.define(version: 20180417171131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "chapters", force: :cascade do |t|
+    t.string "name"
+    t.integer "number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "lessons", force: :cascade do |t|
     t.integer "number"
     t.string "name"
     t.string "content"
+  end
+
+  create_table "sections", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.integer "number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
