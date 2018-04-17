@@ -1,7 +1,11 @@
-<h2><%= @chapter.name %></h2>
-<hr>
-<% @sections.each do |section| %>
-  <h3><%= link_to section.name, section_lessons_path(section) %></h3>
-<% end %>
-
-<p><%= link_to "Home Page", root_path %></p>
+<div class="navbar">
+  <span class="navbar-text"><%= link_to "Courses", root_path, class: "nav-text" %></span>
+</div>
+<div class="body-content">
+  <div class="container">
+    <h2><%= @chapter.name %></h2>
+    <% @sections.each do |section| %>
+      <h3><%= link_to section.name, section_lessons_path(section), class: "section"%></h3>
+    <% end %>
+  </div>
+</div>

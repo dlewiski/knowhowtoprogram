@@ -1,6 +1,14 @@
-<h1>All Chapters:</h1>
-<hr>
+<div class="navbar">
+  <span class="navbar-text"><%= link_to "Courses", root_path, class: "nav-text" %></span>
+</div>
+<div class="body-content">
+  <div class="container">
 
-<% @chapters.each do |chapter| %>
-  <h3>[<%= chapter.number %>] <%= link_to chapter.name, chapter_sections_path(chapter) %> </h3>
-<% end %>
+
+    <h1 class="courses-heading">Courses</h1>
+
+    <% @chapters.each do |chapter| %>
+      <span class="chapter"><%= link_to chapter.name, chapter_sections_path(chapter), class: "chapter" %><br></span>
+    <% end %>
+  </div>
+</div>

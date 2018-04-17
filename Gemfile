@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Bootstrap-related Gems
+gem 'bootstrap', '~> 4.0.0.beta2.1'
 # gem "bootstrap_form",
 #     git: "https://github.com/bootstrap-ruby/bootstrap_form.git",
 #     branch: "master"

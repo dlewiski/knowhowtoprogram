@@ -1,7 +1,11 @@
-<h1>All lessons:</h1>
-
-<ul>
-  <% @lessons.each do |lesson| %>
-    <li><%= lesson.name %> | <%= lesson.number %></li>
-  <% end %>
-</ul>
+<div class="navbar">
+  <span class="navbar-text"><%= link_to "Courses", root_path, class: "nav-text" %></span>
+</div>
+<div class="body-content">
+  <div class="container">
+    <h1>All lessons:</h1>
+      <% @lessons.each do |lesson| %>
+        <%= lesson.name %> | <%= lesson.number %>
+      <% end %>
+  </div>
+</div>
