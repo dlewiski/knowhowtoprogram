@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root 'lessons#index'
   resources :chapters do
-    resources :sections do
-      resources :lessons do
-      end
-    end
+    resources :sections
+  end
+
+  resources :sections do
+    resources :lessons
   end
 end

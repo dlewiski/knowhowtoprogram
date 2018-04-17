@@ -1,0 +1,5 @@
+<h2><%= @chapter.name %></h2>
+<hr>
+<% @sections.each do |section| %>
+  <h3><%= link_to section.name, section_lessons_path(section) %></h3>
+<% end %>

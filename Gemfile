@@ -18,6 +18,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'bootstrap-sass'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -35,8 +36,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Bootstrap-related Gems
-# gem 'bootstrap-sass'
-# gem 'bootstrap', '~> 4.1.0'
 # gem "bootstrap_form",
 #     git: "https://github.com/bootstrap-ruby/bootstrap_form.git",
 #     branch: "master"
@@ -48,6 +47,7 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'capybara'
 end
 
 group :development do
